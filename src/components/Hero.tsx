@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section className="relative w-full min-h-[3000px] bg-white flex justify-center overflow-hidden">
       {/* Фон только для верхней части */}
-      <div className="absolute inset-x-0 top-0 h-[1800px] bg-[url('/bg2.png')] bg-top bg-no-repeat bg-cover pointer-events-none z-0" />
+      <div className="absolute inset-x-0 top-0 h-[1800px] max-h-[1800px] bg-[url('/bg2.png')] bg-top bg-no-repeat bg-cover pointer-events-none z-0" />
       {/* === ТАБ === */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 bg-white shadow-[0_12px_15px_0_rgba(0,0,0,0.5)] px-8 py-1.5 rounded-full z-20">
         <h1 className="text-[#2C7488] text-sm font-extrabold whitespace-nowrap font-inter">
