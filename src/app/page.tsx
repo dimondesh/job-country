@@ -3,6 +3,7 @@ import { Hero } from "../components/Hero";
 import HowToAccess from "@/components/HowToAccess";
 import AccessBottomSection from "@/components/AccessBottom";
 import MainCharacterSection from "@/components/MainCharacter";
+import FinalOfferSection from "@/components/FinalOffer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HowToAccess />
       <AccessBottomSection />
       <MainCharacterSection />
+      <FinalOfferSection />
     </>
   );
 }
