@@ -44,7 +44,9 @@ const HowToAccess = () => {
           </ul>
         </div>
       </div>
-      <OrderForm />
+      <div id="order-form">
+        <OrderForm />
+      </div>
     </section>
   );
 };

@@ -1,16 +1,22 @@
 import { NextResponse } from "next/server";
 
-const BOT_TOKEN = process.env.NEXT_BOT_TOKEN;
-const CHAT_ID = process.env.NEXT_CHAT_ID;
-
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { name, phone, email } = body;
+    const BOT_TOKEN = process.env.NEXT_BOT_TOKEN;
+    const CHAT_ID = process.env.NEXT_CHAT_ID;
 
-    const message = `Нове замовлення:\n\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n📧 Email: ${
-      email || "-"
-    }`;
+    if (!BOT_TOKEN || !CHAT_ID) {
+      console.error("No token or Chat ID in env");
+      return NextResponse.json(
+        { error: "Server Configuration Error" },
+        { status: 500 }
+      );
+    }
+
+    const body = await req.json();
+    const { name, phone } = body;
+
+    const message = `Нове замовлення:\n\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}`;
 
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
@@ -28,6 +34,7 @@ export async function POST(req: Request) {
     const data = await response.json();
 
     if (!response.ok) {
+      console.error("Telegram Error:", data);
       return NextResponse.json({ error: data.description }, { status: 500 });
     }
 
