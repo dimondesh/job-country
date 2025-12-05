@@ -201,7 +201,11 @@ export const Hero = () => {
           </div>
 
           <div className="relative flex flex-col items-center gap-8 mt-4">
-            <Video src="/lion.mp4" className="w-50" />
+            <Video
+              src="/lion.mp4"
+              posterSrc="/lion-preview.png"
+              className="w-50"
+            />
 
             <Image
               src="/scissors.png"

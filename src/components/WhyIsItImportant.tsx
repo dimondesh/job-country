@@ -93,7 +93,11 @@ const WhyIsItImportant = () => {
             “Цей формат – майбутнє профорієнтації. Левеня Лео – це геніально!”
           </p>
         </div>
-        <Video src="/expert.mp4" className="z-100 mt-30 w-160" />
+        <Video
+          src="/expert.mp4"
+          posterSrc="/expert-preview.png"
+          className="z-100 mt-30 w-160"
+        />
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-[120px] bg-[linear-gradient(180deg,rgba(253,245,240,0)_0%,#1c6179_100%)]"></div>
