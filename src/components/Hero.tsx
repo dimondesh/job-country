@@ -86,7 +86,7 @@ export const Hero = () => {
           2100
         </p>
       </div>
-      <JoinButton className="absolute top-[670px] md:top-[670px] left-1/2 -translate-x-1/2 z-30 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)] md:scale-125" />
+      <JoinButton className="absolute top-[670px] md:top-[670px] left-1/2 -translate-x-1/2 z-30 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)]" />
 
       <div className="absolute left-0 w-full h-[2170px] top-[850px] pointer-events-none z-15 bg-[linear-gradient(180deg,rgba(253,245,240,0)_0%,#fdf5f0_17.79%)]" />
 

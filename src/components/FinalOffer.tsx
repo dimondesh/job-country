@@ -120,7 +120,7 @@ const FinalOfferSection = () => {
           className="object-contain object-bottom-right"
         />
       </div>
-      <JoinButton className="absolute top-[520px] md:top-[660px] left-1/2 -translate-x-1/2 z-30 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)] md:scale-125" />
+      <JoinButton className="absolute top-[520px] md:top-[660px] left-1/2 -translate-x-1/2 z-30 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)]" />
     </section>
   );
 };
