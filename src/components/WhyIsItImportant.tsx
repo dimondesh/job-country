@@ -42,7 +42,7 @@ const WhyIsItImportant = () => {
           className="absolute inset-y-0 top-55 sm:top-45 z-0"
         />
         <Image
-          src="/decorationleft2.png"
+          src="/decoration-left2.png"
           alt="decoration left"
           width={35}
           height={200}

@@ -80,7 +80,7 @@ const MainCharacterSection = () => {
 
       <div className="relative z-10 container mx-auto px-6 pt-10 md:pt-20">
         <div className="relative h-[300px] md:h-[400px] w-full mb-12 md:mb-0">
-          <div className="absolute -left-10 top-0 w-44 h-60 md:w-80 md:h-96 z-20">
+          <div className="absolute -left-10 top-0 w-44 h-60 md:w-80 md:h-96 z-20 md:left-0">
             <Image
               src="/rabbitHost.png"
               alt="Rabbit Host"

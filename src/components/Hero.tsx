@@ -108,7 +108,7 @@ export const Hero = () => {
           alt="small lion"
           width={130}
           height={130}
-          className="absolute -bottom-30 -left-2 z-20"
+          className="absolute -bottom-30 -left-2 z-20 min-[360px]:-bottom-26"
         />
       </div>
       <Image
