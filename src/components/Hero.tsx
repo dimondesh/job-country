@@ -1,18 +1,16 @@
 import Image from "next/image";
+import { Video } from "./Video";
 
 export const Hero = () => {
   return (
     <section className="relative w-full min-h-[3000px] bg-white flex justify-center overflow-hidden">
-      {/* Фон только для верхней части */}
       <div className="absolute inset-x-0 top-0 h-[1800px] max-h-[1800px] bg-[url('/bg2.png')] bg-top bg-no-repeat bg-cover pointer-events-none z-0" />
-      {/* === ТАБ === */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 bg-white shadow-[0_12px_15px_0_rgba(0,0,0,0.5)] px-8 py-1.5 rounded-full z-20">
         <h1 className="text-[#2C7488] text-sm font-extrabold whitespace-nowrap font-inter">
           КРАЇНА ПРОФЕСІЙ
         </h1>
       </div>
 
-      {/* === ЛЕВ ГЛАВНЫЙ === */}
       <Image
         src="/lion.png"
         alt="lion"
@@ -21,7 +19,6 @@ export const Hero = () => {
         className="absolute top-[45px] left-1/2 -translate-x-1/2 z-10 pointer-events-none"
       />
 
-      {/* === СИНЯЯ КАРТОЧКА === */}
       <div className="absolute top-[255px] left-1/2 -translate-x-1/2 bg-[#2C7488]/90 text-white/90 p-4 rounded-3xl w-74 z-10 shadow-[10px_12px_15px_0_rgba(0,0,0,0.5)]">
         <div className="text-center text-xs font-semibold leading-3 space-y-4">
           <p>
@@ -35,7 +32,6 @@ export const Hero = () => {
           </p>
         </div>
 
-        {/* ❤ СЕРДЦЕ */}
         <Image
           src="/heart.png"
           alt="heart"
@@ -45,9 +41,7 @@ export const Hero = () => {
         />
       </div>
 
-      {/* === ДЕТИ === */}
       <div className="absolute top-[460px] left-1/2 -translate-x-1/2 flex gap-[-10px] z-10">
-        {/* Левый ребёнок */}
         <div className="relative w-[100px] h-[150px]">
           <Image
             src="/boy2.png"
@@ -58,7 +52,6 @@ export const Hero = () => {
           />
         </div>
 
-        {/* Средний */}
         <div className="relative w-[140px] h-[190px] ">
           <Image
             src="/boy1.png"
@@ -69,7 +62,6 @@ export const Hero = () => {
           />
         </div>
 
-        {/* Правый */}
         <div className="relative w-[145px] h-[195px]">
           <Image
             src="/girl.png"
@@ -81,7 +73,6 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* === ЖЁЛТАЯ КАРТОЧКА === */}
       <div className="absolute top-[510px] left-1/2 -translate-x-1/2 w-55 bg-[#ECDB44]/80 rounded-2xl py-4 text-center z-10 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)]">
         <p className="text-[#333333] font-semibold text-base pb-3">
           для дітей 6–13 років
@@ -95,9 +86,7 @@ export const Hero = () => {
         </p>
       </div>
 
-      {/* === ПУНКТИРНАЯ ЦИТАТА === */}
       <div className="absolute left-0 w-full h-[2170px] top-[850px] pointer-events-none z-15 bg-[linear-gradient(180deg,rgba(253,245,240,0)_0%,#fdf5f0_17.79%)]" />
-      {/* Декоративный верхний фон поверх градиента */}
 
       <div className="absolute top-[810px] left-1/2 -translate-x-1/2 w-[95%] max-w-[370px] z-20 ">
         <div className="absolute bg-[#F5F1F0]/80 w-76 h-44 left-1/2 -translate-x-1/2 top-4 -z-1 rounded-xl"></div>
@@ -127,7 +116,7 @@ export const Hero = () => {
         alt="background"
         width={320}
         height={390}
-        className="absolute top-248 -left-0 z-19"
+        className="absolute inset-y-0 top-248 z-19"
       />
       <Image
         src="/decorationLeft.png"
@@ -141,15 +130,13 @@ export const Hero = () => {
         alt="background"
         width={50}
         height={390}
-        className="absolute top-295  left-75 z-19"
+        className="absolute top-295 inset-y-0 right-0  z-19"
       />
       <div className="absolute top-[1130px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-20">
-        {/* Заголовок */}
         <h2 className="text-[#333] text-[28px] font-bold text-center px-6 leading-tight font-inter">
           Що всередині цієї відеоподорожі?
         </h2>
 
-        {/* Лев в очках */}
         <Image
           src="/smartLion.png"
           alt="smart lion"
@@ -157,7 +144,6 @@ export const Hero = () => {
           height={340}
           className=""
         />
-        {/* Подзаголовок */}
         <p className=" text-center text-[16px] text-[#222] font-extrabold px-4 leading-snug  font-montserrat max-w-[300px]">
           Докладно та в інтерактивній формі про всі професії
         </p>
@@ -178,7 +164,7 @@ export const Hero = () => {
           alt="background"
           width={50}
           height={390}
-          className="absolute top-115  left-75 z-19"
+          className="absolute top-115  right-3 lg:right-85 z-19"
         />
         <div className="w-75 mt-15 bg-[#ECDB44]/80 rounded-[40px] py-6 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)]">
           <h2 className="pl-6 text-[#333333] font-extrabold text-xl pb-3">
@@ -199,11 +185,8 @@ export const Hero = () => {
           height={85}
           className="relative bottom-22 right-34 pointer-events-none"
         />
-        {/* Лев в очках */}
 
-        {/* === Левеня Лео ваш мульт-гід у світ професій === */}
         <div className="relative bottom-20 flex flex-col items-center mt-6">
-          {/* Заголовок */}
           <div className="">
             <Image
               src="/pencil.png"
@@ -218,15 +201,8 @@ export const Hero = () => {
           </div>
 
           <div className="relative flex flex-col items-center gap-8 mt-4">
-            <Image
-              src="/videoPreview1.png"
-              alt="video1"
-              width={200}
-              height={120}
-              className="shadow-md"
-            />
+            <Video src="/lion.mp4" className="w-50" />
 
-            {/* Ножницы + линейка (справа между видео) */}
             <Image
               src="/scissors.png"
               alt="scissors and ruler"
@@ -244,7 +220,6 @@ export const Hero = () => {
             />
           </div>
 
-          {/* Маленький блок с подписями */}
           <div className="mt-6 w-[82%] max-w-[330px] bg-[#8AC825] rounded-[40px] px-7 py-10 pb-12 shadow-[5px_5px_5px_0_rgba(0,0,0,0.5)]">
             <p className="text-[15px] font-bold text-[#222] leading-tight font-montserrat text-center">
               Дитина дивиться відео, проходить мінітести, дізнається про себе –
@@ -259,20 +234,17 @@ export const Hero = () => {
             />
           </div>
 
-          {/* Мальчик – под блоком */}
-
-          {/* ТРИ ЗАЙЦА */}
+         
           <Image
             src="/rabbits.png"
             alt="three rabbits"
             width={350}
             height={230}
-            className="mt-8"
+            className="mt-8 sm:mt-22"
           />
 
-          <div className="bg-[linear-gradient(180deg,rgba(28,97,121,0)_67%,#1c6179_100%)] z-30 w-full h-[200px] relative -top-50" />
-          {/* Заголовок следующей секции */}
         </div>
+        <div className="bg-[linear-gradient(180deg,rgba(28,97,121,0)_67%,#1c6179_100%)] z-30 w-full h-[200px] relative -top-70 sm:-top-64" />
       </div>
     </section>
   );

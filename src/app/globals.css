@@ -38,3 +38,7 @@ li {
 .custom-list li::marker {
   font-size: 7px;
 }
+
+input {
+  color: #171717;
+}
