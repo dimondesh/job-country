@@ -85,7 +85,7 @@ const WhyIsItImportant = () => {
           height={340}
           className="mt-4 md:mt-30"
         />
-        <div className="w-full bg-[#8AC825] rounded-[30px] shadow-lg p-6 text-[#333] -mt-3 max-w-100">
+        <div className="w-full bg-[#8AC825] rounded-[30px] shadow-lg p-6 text-[#333] -mt-3 max-w-100 relative z-10">
           <p className="text-[11px] leading-snug font-medium">
             <strong>Джон Крісбі</strong>, професійний консультант (США):
           </p>
