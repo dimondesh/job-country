@@ -43,14 +43,14 @@ const WhyIsItImportant = () => {
         />
         <Image
           src="/decorationleft2.png"
-          alt="decoration right"
+          alt="decoration left"
           width={35}
           height={200}
           className="absolute top-12 left-0 z-0"
         />
         <Image
           src="/decorationRight.png"
-          alt="rabbit car"
+          alt="decoration right"
           width={50}
           height={200}
           className="absolute top-95 right-0 z-0"

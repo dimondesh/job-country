@@ -89,7 +89,7 @@ export const Hero = () => {
       <div className="absolute left-0 w-full h-[2170px] top-[850px] pointer-events-none z-15 bg-[linear-gradient(180deg,rgba(253,245,240,0)_0%,#fdf5f0_17.79%)]" />
 
       <div className="absolute top-[810px] left-1/2 -translate-x-1/2 w-[95%] max-w-[370px] z-20 ">
-        <div className="absolute bg-[#F5F1F0]/80 w-76 h-44 left-1/2 -translate-x-1/2 top-4 -z-1 rounded-xl"></div>
+        <div className="absolute bg-[#F5F1F0]/80 w-76 h-44 min-[375px]:w-82 min-[375px]:h-48 sm:w-84 sm:h-50 left-1/2 -translate-x-1/2 top-4 -z-1 rounded-xl"></div>
         <Image
           src="/dashed-frame.png"
           alt="quote frame"
@@ -234,17 +234,15 @@ export const Hero = () => {
             />
           </div>
 
-         
           <Image
             src="/rabbits.png"
             alt="three rabbits"
             width={350}
             height={230}
-            className="mt-8 sm:mt-22"
+            className="mt-8 sm:mt-22 min-[505px]:mt-13 min-[535px]:mt-22"
           />
-
         </div>
-        <div className="bg-[linear-gradient(180deg,rgba(28,97,121,0)_67%,#1c6179_100%)] z-30 w-full h-[200px] relative -top-70 sm:-top-64" />
+        <div className="bg-[linear-gradient(180deg,rgba(28,97,121,0)_67%,#1c6179_100%)] z-30 w-full h-[200px] relative -top-70 min-[505px]:-top-65 min-[535px]:-top-68 sm:-top-68" />
       </div>
     </section>
   );
